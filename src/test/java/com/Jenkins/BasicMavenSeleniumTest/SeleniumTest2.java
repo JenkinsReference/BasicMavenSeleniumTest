@@ -16,8 +16,8 @@ public class SeleniumTest2 {
 	}
 	
 	@Test
-	public void main() {
-		    
+	public void test2() {
+		System.out.println("*********************************************************************Selenium Test 1");
 			driver.get("https://www.google.com");
 			driver.manage().window().maximize(); 	
 			String title = driver.getTitle();

@@ -16,12 +16,14 @@ public class SeleniumTest {
 	}
 	
 	@Test
-	public void main() {
+	public void test1() {
 		    
+		System.out.println("*********************************************************************Selenium Test 0");
 			driver.get("https://www.google.com");
 			driver.manage().window().maximize(); 	
 			String title = driver.getTitle();
 			System.out.println("Title = " + title);
+			
 	}
 	
 	@AfterMethod

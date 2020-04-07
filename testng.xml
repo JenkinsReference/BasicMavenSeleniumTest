@@ -4,6 +4,8 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.Jenkins.BasicMavenSeleniumTest.SeleniumTest"/>
+      <class name="com.Jenkins.BasicMavenSeleniumTest.SeleniumTest2"/>
+      <class name="com.Jenkins.BasicMavenSeleniumTest.SeleniumTest3"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

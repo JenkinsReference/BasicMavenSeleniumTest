@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="2" name="TestSuite" time="125.426" errors="0" skipped="0">
+<testsuite tests="2" failures="1" name="TestSuite" time="10.763" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.3+12-LTS"/>
@@ -14,6 +14,7 @@
     <property name="user.script" value=""/>
     <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="test" value="SeleniumTest2,SeleniumTest3"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="D:\Automation\Handson\JenkinsBaseReference\BasicMavenSeleniumTest"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
@@ -26,7 +27,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="D:\Automation\Handson\JenkinsBaseReference\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7857047489466506743.tmp"/>
+    <property name="classworlds.conf" value="D:\Automation\Handson\JenkinsBaseReference\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4478454998862689669.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.3\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk-11.0.3/bin/server;C:/Program Files/Java/jdk-11.0.3/bin;C:\Python27\;C:\Python27\Scripts;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;D:\Devops\Setup\Maven\apache-maven-3.6.0\bin;C:\Program Files\Java\jdk-11.0.3\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\SmartBear\SoapUI-5.5.0\bin;C:\Users\Shobhith\workspace\PefinWebApp\lib;C:\Program Files\Java\jdk-11.0.3\bin;C:\Users\Shobhith\AppData\Local\Microsoft\WindowsApps;C:\Users\Shobhith\AppData\Local\Android\Sdk\tools;C:\Users\Shobhith\AppData\Local\Android\Sdk\tools\bin;C:\Users\Shobhith\AppData\Local\Android\Sdk\platform-tools;C:\Users\Shobhith\AppData\Roaming\npm;C:\WINDOWS\system32;;."/>
     <property name="jdk.debug" value="release"/>
@@ -43,7 +44,7 @@
     <property name="java.class.path" value="C:\Users\Shobhith\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.11.0.20190220-2117\jars\plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B compile test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -Dtest=SeleniumTest2,SeleniumTest3 test"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-11.0.3"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -61,95 +62,28 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.Jenkins.BasicMavenSeleniumTest.SeleniumTest" name="main" time="41.58">
-    <failure message="chrome not reachable
-  (Session info: chrome=80.0.3987.149)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-G7LJERD&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.3&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Shobhith\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53382}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9e9cceee689987cc077a59ca355b7c96" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=80.0.3987.149)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-G7LJERD&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.3&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Shobhith\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53382}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9e9cceee689987cc077a59ca355b7c96
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
-	at com.Jenkins.BasicMavenSeleniumTest.SeleniumTest.main(SeleniumTest.java:23)
+  <testcase classname="com.Jenkins.BasicMavenSeleniumTest.SeleniumTest2" name="test2" time="5.402"/>
+  <testcase classname="com.Jenkins.BasicMavenSeleniumTest.SeleniumTest3" name="test3" time="5.361">
+    <failure message="expected:&lt;...1&gt; but was:&lt;...&gt;" type="junit.framework.ComparisonFailure">junit.framework.ComparisonFailure: expected:&lt;...1&gt; but was:&lt;...&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.Jenkins.BasicMavenSeleniumTest.SeleniumTest3.test3(SeleniumTest3.java:27)
 </failure>
-    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@2b2948e2
-Hello World!
+    <system-out>Hello World!
+*********************************************************************Selenium Test 3
+Title = Google
 </system-out>
-    <system-err>Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 19198
+    <system-err>Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 47342
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1586267663.565][WARNING]: Timed out connecting to Chrome, retrying...
-Apr 07, 2020 7:24:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1586272977.580][WARNING]: Timed out connecting to Chrome, retrying...
+Apr 07, 2020 8:52:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-[1586267667.017][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586267667.182][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586267667.283][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586267667.384][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586267667.485][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586267667.627][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586267667.829][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586267667.930][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586267668.031][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586267668.133][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586267668.381][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586267668.482][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586267668.584][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586267668.721][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586267668.922][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586267669.024][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586267671.075][WARNING]: Timed out connecting to Chrome, retrying...
-[1586267675.075][WARNING]: Timed out connecting to Chrome, retrying...
-[1586267681.100][WARNING]: Timed out connecting to Chrome, retrying...
-[1586267685.101][WARNING]: Timed out connecting to Chrome, retrying...
-[1586267695.178][WARNING]: Timed out connecting to Chrome, retrying...
-[1586267699.178][WARNING]: Timed out connecting to Chrome, retrying...
+[1586272980.197][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586272980.481][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586272980.668][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586272980.769][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586272982.827][WARNING]: Timed out connecting to Chrome, retrying...
 </system-err>
   </testcase>
-  <testcase classname="com.Jenkins.BasicMavenSeleniumTest.SeleniumTest" name="after" time="41.79">
-    <failure message="chrome not reachable
-  (Session info: chrome=80.0.3987.149)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-G7LJERD&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.3&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Shobhith\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53382}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9e9cceee689987cc077a59ca355b7c96" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=80.0.3987.149)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-G7LJERD&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.3&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Shobhith\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53382}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9e9cceee689987cc077a59ca355b7c96
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
-	at com.Jenkins.BasicMavenSeleniumTest.SeleniumTest.after(SeleniumTest.java:29)
-</failure>
-  </testcase>
-  <testcase classname="com.Jenkins.BasicMavenSeleniumTest.AppTest" name="testApp on testApp(com.Jenkins.BasicMavenSeleniumTest.AppTest)" time="42.056"/>
 </testsuite>

@@ -1,2 +1,3 @@
-com\Jenkins\BasicMavenSeleniumTest\AppTest.class
+com\Jenkins\BasicMavenSeleniumTest\SeleniumTest3.class
 com\Jenkins\BasicMavenSeleniumTest\SeleniumTest.class
+com\Jenkins\BasicMavenSeleniumTest\SeleniumTest2.class
